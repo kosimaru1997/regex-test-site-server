@@ -10,6 +10,11 @@ Rails APIモードのDocker環境試作です。
 $ docker-compose up -d 
 ```
 
+DB作成
+``` .bash
+$ docker-compose run web rails db:create
+```
+
 MySql接続
 ```
 docker-compose exec db mysql -u root -p //設定変えていなければパスワードはpasswordになります。
