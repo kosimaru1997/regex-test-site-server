@@ -2,6 +2,8 @@
 
 Rails APIモードのDocker環境試作です。
 
+## 環境構築手順
+
 起動
 
 ``` .bash
@@ -11,4 +13,13 @@ $ docker-compose up -d
 MySql接続
 ```
 docker-compose exec db mysql -u root -p //設定変えていなければパスワードはpasswordになります。
+```
+
+### ruby update手順
+
+
+``` .bash
+$ docker-compose down
+// DockerFileのruby:3.x.xを変更　、Gemfileのruty '3.x.x'を変更
+$ docker-compose build
 ```
