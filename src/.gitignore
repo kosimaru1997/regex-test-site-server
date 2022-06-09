@@ -27,4 +27,4 @@
 /config/master.key
 
 # Docker
- /src/db/mysql_data/*
+/db/mysql_data/*
