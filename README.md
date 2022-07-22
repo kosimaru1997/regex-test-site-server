@@ -15,7 +15,7 @@ DB作成
 $ docker-compose run web rails db:create
 ```
 
-MySql接続
+Mysql接続
 ```
 docker-compose exec db mysql -u root -p //設定変えていなければパスワードはpasswordになります。
 ```
