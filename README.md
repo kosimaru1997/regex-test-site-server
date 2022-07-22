@@ -25,6 +25,6 @@ docker-compose exec db mysql -u root -p //設定変えていなければパス�
 
 ``` .bash
 $ docker-compose down
-// DockerFileのruby:3.x.xを変更　、Gemfileのruty '3.x.x'を変更
+// DockerFileのruby:3.x.xを変更　、Gemfileのruby '3.x.x'を変更
 $ docker-compose build
 ```
