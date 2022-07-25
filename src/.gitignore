@@ -28,3 +28,6 @@
 
 # Docker
 /db/mysql_data/*
+
+# .env
+/.env

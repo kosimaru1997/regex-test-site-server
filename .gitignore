@@ -1,0 +1,5 @@
+# env
+/.env
+
+# mysql_data
+/mysql/data
