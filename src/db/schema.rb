@@ -13,9 +13,10 @@
 ActiveRecord::Schema.define(version: 2022_07_25_135356) do
 
   create_table "problems", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "title", limit: 30
-    t.text "content"
-    t.string "level", limit: 10
+    t.string "title", limit: 30, null: false
+    t.text "content", null: false
+    t.string "level", limit: 10, null: false
+    t.text "test_case", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
