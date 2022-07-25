@@ -5,4 +5,7 @@ WORKDIR /app
 COPY ./src /app
 
 RUN bundle config --local set path 'vendor/bundle' \
-  && bundle install
+  && bundle install \
+  && apt-get update \
+  && apt-get upgrade \
+  && apt-get install -y mariadb-client
