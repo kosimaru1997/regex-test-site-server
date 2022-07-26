@@ -1,0 +1,11 @@
+{
+  "ruby.intellisense": "rubyLocate",
+  "ruby.useLanguageServer": true,
+  "solargraph.definitions": true,
+  "solargraph.diagnostics": true,
+  "solargraph.formatting": true,
+  "ruby.useBundler": true,
+  "ruby.lint": {
+      "rubocop": false
+  }
+}
