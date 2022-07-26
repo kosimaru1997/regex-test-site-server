@@ -4,4 +4,5 @@ class Api::ProblemsController < ApplicationController
     @problems = Problem.all
     render json: @problems
   end
+
 end
