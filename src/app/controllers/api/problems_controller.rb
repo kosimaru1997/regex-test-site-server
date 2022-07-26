@@ -5,4 +5,9 @@ class Api::ProblemsController < ApplicationController
     render json: @problems
   end
 
+  def show
+    @problem = Problem.find(params[:id]).to_json(except: [:created_at, :updated_at])
+    render json: @problem
+  end
+
 end
