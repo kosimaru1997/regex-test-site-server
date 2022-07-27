@@ -1,5 +1,4 @@
 class Api::ProblemsController < ApplicationController
-  include ExceptionHandler
 
   def index
     @problems = Problem.all.to_json(only: [:id, :title, :content])
