@@ -11,7 +11,6 @@ class Api::ProblemsController < ApplicationController
   end
 
   def check
-    byebug
     regex = Regexp.compile(params[:regex])
     test_cases = Problem.find(params[:id]).problem_test_cases
     collect_cases = test_cases.filter(&:is_collect)
