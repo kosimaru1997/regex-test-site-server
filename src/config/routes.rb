@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :problems
-    post '/problems/:id/check/:regex', to: 'problems#check', as: 'problem_check'
+    post '/problems/:id/check', to: 'problems#check', as: 'problem_check'
   end
 end
