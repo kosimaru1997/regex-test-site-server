@@ -10,13 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_25_135356) do
+ActiveRecord::Schema.define(version: 2022_07_29_160814) do
+
+  create_table "problem_test_cases", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "test_case", null: false
+    t.bigint "problem_id", null: false
+    t.boolean "is_collect", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["problem_id"], name: "index_problem_test_cases_on_problem_id"
+  end
 
   create_table "problems", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title", limit: 30, null: false
     t.text "content", null: false
     t.string "level", limit: 10, null: false
-    t.text "test_case", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
