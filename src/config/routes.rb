@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :problems
+    post '/problems/:id/check', to: 'problems#check', as: 'problem_check'
   end
 end
